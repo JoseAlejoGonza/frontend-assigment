@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Navbar, Nav, NavDropdown, Form, FormControl } from 'react-bootstrap';
+import { Button, Navbar, Nav, NavDropdown, Form, FormControl, Container, Row, Col } from 'react-bootstrap';
+import Image from '../components/Image';
+import background from '../img/degradado-difuminado-verde_1920x1080_7936.jpg'
 import * as Icon from 'react-bootstrap-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../scss/styles.scss';
@@ -36,9 +38,17 @@ export default function Base(){
                 </Navbar.Collapse>
             </Navbar>
             </div>
-            <div className="style-paper">
+            <Container fluid>
+                <Row md={12}>
+                    <Col className="stile-container-col-paper paper-style" md={8}>
+                        <Image className="image" src={background}/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium, urna non scelerisque tincidunt, ante quam tincidunt leo, id auctor sem odio in risus. Mauris vitae justo consequat quam vehicula aliquam. In vulputate luctus nisl eu commodo. In tincidunt, velit id pharetra congue, erat sapien mattis nisi, vel iaculis odio ex quis odio. Vestibulum at tellus sapien. In ac tempus sem. Morbi at dui vel neque vestibulum feugiat eget vel lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce vel sodales risus. Nulla facilisi. Proin pellentesque aliquam dui vitae dapibus.
 
-            </div>
+Integer tincidunt fermentum risus in rhoncus. Donec eget nibh tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur sit amet tortor at nibh mollis auctor. Ut auctor quam id odio ornare, a malesuada velit lobortis. Donec vel mi at purus eleifend vestibulum. Morbi in tortor nulla. Suspendisse tortor magna, sodales ac enim eget, eleifend commodo arcu. Donec vitae est sit amet mi bibendum volutpat dignissim quis diam. Maecenas orci nisl, tristique vel sapien ac, tincidunt tincidunt turpis. Phasellus sit amet rutrum felis. Vestibulum vitae tortor eleifend, ullamcorper turpis vel, suscipit est. Nulla congue hendrerit pharetra. Vivamus auctor pulvinar lobortis. Pellentesque vel lacus libero. Integer luctus ipsum ac ante viverra aliquet.</Col>
+                    <Col className="stile-container-col-notice paper-style" md ={3}>2 of 2</Col>
+                </Row>
+            </Container>
+            
 
         </div>
     );
